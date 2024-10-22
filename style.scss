@@ -1,0 +1,172 @@
+$body-bg-color: rgb(248, 248, 232);
+
+body{
+    background-color: $body-bg-color;
+}
+
+
+.nav{
+  .hamburger ::before {
+    content: "---";
+    color: black;
+  }
+  &[aria-expanded="true"] .hamburger::before {
+    content: "-";
+  }
+}
+
+.image_bg {
+  position: relative;
+  width: 100%;
+
+  .bg_main_img {
+    width: 100%;
+    height: 100vh; 
+    object-fit: cover; 
+    display: block;
+  }
+
+  .content_img {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    z-index: 2; 
+
+    h1 {
+      font-size: 5vw; 
+      color: white;
+    }
+
+    p {
+      font-size: 3vw; 
+      color: white;
+    }
+
+    .btn {
+      font-size: 1.5rem;
+      padding: 0.5rem 2rem;
+      @media (max-width: 768px) {
+        font-size: 1.25rem;
+        padding: 0.4rem 1.8rem;
+      }
+      @media (max-width: 576px) {
+        font-size: 1rem;
+        padding: 0.3rem 1.5rem;
+      }
+    }
+  }
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+  }
+
+
+.two_img {
+
+    .row{
+        align-items: stretch;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .image-container {
+      position: relative;
+      flex-grow: 1;
+      height: 100%;
+ 
+      
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block; 
+      }
+
+      
+      .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+  
+        h1 {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+  
+        p {
+          font-size: 1.25rem;
+        }
+  
+        a {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+
+ 
+  .list_cls ul li a {
+    color: #ffffff; 
+    text-decoration: none; 
+    transition: color 0.3s ease;
+
+  }
+  
+  .list_cls ul li a:hover {
+    color: #bc4fa4 !important; 
+  }
+ 
+
+
+  .accordion-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+  
+    &:focus {
+      box-shadow: none;
+    }
+  
+   
+    .sign::before {
+      content: "+";
+      color: #ff00ff; 
+      font-size: 1.5rem;
+    }
+  
+
+    &[aria-expanded="true"] .sign::before {
+      content: "-";
+    }
+  }
+
+
+.footer_cls{
+
+    .row{
+        background-color: black;
+    }
+ 
+    .heading_footer{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+
+
+
+
+

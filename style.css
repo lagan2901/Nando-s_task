@@ -1,0 +1,135 @@
+body {
+  background-color: rgb(248, 248, 232);
+}
+
+.nav .hamburger ::before {
+  content: "---";
+  color: black;
+}
+.nav[aria-expanded=true] .hamburger::before {
+  content: "-";
+}
+
+.image_bg {
+  position: relative;
+  width: 100%;
+}
+.image_bg .bg_main_img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.image_bg .content_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+.image_bg .content_img h1 {
+  font-size: 5vw;
+  color: white;
+}
+.image_bg .content_img p {
+  font-size: 3vw;
+  color: white;
+}
+.image_bg .content_img .btn {
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+}
+@media (max-width: 768px) {
+  .image_bg .content_img .btn {
+    font-size: 1.25rem;
+    padding: 0.4rem 1.8rem;
+  }
+}
+@media (max-width: 576px) {
+  .image_bg .content_img .btn {
+    font-size: 1rem;
+    padding: 0.3rem 1.5rem;
+  }
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.two_img .row {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+}
+.two_img .image-container {
+  position: relative;
+  flex-grow: 1;
+  height: 100%;
+}
+.two_img .image-container img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+.two_img .image-container .text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+.two_img .image-container .text-overlay h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.two_img .image-container .text-overlay p {
+  font-size: 1.25rem;
+}
+.two_img .image-container .text-overlay a {
+  margin-top: 1rem;
+}
+
+.list_cls ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.list_cls ul li a:hover {
+  color: #bc4fa4 !important;
+}
+
+.accordion-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-button .sign::before {
+  content: "+";
+  color: #ff00ff;
+  font-size: 1.5rem;
+}
+.accordion-button[aria-expanded=true] .sign::before {
+  content: "-";
+}
+
+.footer_cls .row {
+  background-color: black;
+}
+.footer_cls .heading_footer {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}/*# sourceMappingURL=style.css.map */

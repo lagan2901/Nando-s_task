@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+  
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">
+        <div class="row">
+            <div class="col-12 d-none d-lg-block">
+                <img src="/images/Logo_name.jpeg" alt="Desktop Image" class="img-fluid" height="100" width="80">
+            </div>
+            <div class="col-12 d-lg-none">
+                <img src="https://www.nandos.co.uk/sites/all/themes/nandos/nandos-2015-styleguide-dist/images/layout/barci-Icon.svg" alt="Mobile Image" class="img-fluid" height="10vh" width="50px">
+            </div>
+        </div>
+    </a>
+    
+    <!-- mobile view -->
+    <div class="d-flex align-items-center justify-content-between d-lg-none w-100 flex-nowrap">
+        <a class="nav-item nav-link" href="#">    
+            <img src="https://www.nandos.co.uk/sites/all/themes/nandos/nandos-2015-styleguide-dist/images/svgs/user-green.svg" alt="User Icon" style="width: 30px; height: 30px;">
+        </a>
+        <button type="button" class="btn btn-success mx-2">ORDER ONLINE</button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active mx-2" href="#">MENU<span class="sr-only">(current)</span></a>
+
+            <div class="dropdown">
+                <a class="cursor-pointer nav-link" href="#" role="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RESTAURANTS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li class="dropdown-item">To find a Nando's enter a town or postcode</li>
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    
+                                    <input id="locationInput" type="text" class="form-control" placeholder="Enter location" aria-label="Location">
+
+                                    
+                                    <a id="mapLink" href="https://maps.google.com" target="_blank" class="input-group-text" title="Open Google Maps">
+                                        <i class="bi bi-crosshair" style="width: 20px; height: 20px;"></i>
+                                    </a>
+
+                                   
+                                    <button class="btn btn-primary" type="button" onclick="openGoogleMaps()">Go</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <li><a class="dropdown-item" href="#"><strong>View all Restaurants</strong></a></li>
+                </ul>
+            </div>
+
+            <a class="nav-item nav-link mx-2" href="#">NANDO'S REWARDS</a>
+            <a class="nav-item nav-link mx-2" href="#">COOK</a>
+            <a class="nav-item nav-link mx-2" href="#">SHOP</a>
+            <a class="nav-item nav-link mx-2" href="#">ABOUT US</a>
+            <a class="nav-item nav-link mx-2" href="#">HELP</a>
+            <a class="nav-item nav-link mx-2" href="#">CAREERS</a>
+            <a class="nav-item nav-link mx-2" href="#">
+                <img src="https://www.nandos.co.uk/sites/all/themes/nandos/nandos-2015-styleguide-dist/images/svgs/user-green.svg" class="d-none d-lg-block" alt="User Icon">
+            </a>
+            <a class="nav-item nav-link mx-2 d-none d-lg-block" href="#">
+                <button type="button" class="btn btn-success mx-4">ORDER ONLINE</button>
+            </a>
+        </div>
+    </div>
+</nav>
+
+
+    
+
+   
+   
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active ">
+                <img src="./images/carousel_img2.jpg" class="d-block object-fit-cover slanted-image" alt="Slide 1">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <img src="./images/line.png" class="img-fluid w-25 justify-content-center mb-3">
+                   <h1>NandoOoOo's x Fanta</h1>
+                   <img src="./images/line.png" class="img-fluid w-25 justify-content-center mt-3 object-fit-cover">
+                    <p>Ready to enter your weird era ?</p>
+                    <button type="button" class="btn btn-light">Order Online</button>
+                  </div>
+            
+            </div>
+            <div class="carousel-item">
+                <img src="./images/carousel_img1.jpg" class="d-block slanted-image" alt="Slide 2">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <img src="./images/line.png" class="img-fluid w-25 justify-content-center mb-3">
+                   <h1>Bite Me</h1>
+                   <img src="./images/line.png" class="img-fluid w-25 justify-content-center mt-3 object-fit-cover">
+                    <p>Our cheesy Garlic Pitta's oOoOozing with good stuff</p>
+                    <button type="button" class="btn btn-light">Order Online</button>
+                  </div>
+            </div>
+        </div>
+        
+        <!-- Bootstrap classes for background and border -->
+        <button class="carousel-control-prev bg-transparent border border-0" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </button>
+        
+        <button class="carousel-control-next bg-transparent border border-0" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"></span>
+        </button>
+    </div>
+
+
+
+    <div class="container-flex my-4 " class="card" >
+        <div class="row px-4 py-4">
+          <div class="col-12 col-md-4 d-flex flex-column align-items-start " id="card" style="height: 300px; ">
+            <h1 class="h1">ORDER FOR <br>COLLECT</h1>
+            <p class="mt-2">Plan ahead and get your PERi-PERi to-go, from a restaurant near you.</p>
+            <button type="button" class="btn btn-success btn-sm mt-4">Order Collect</button>
+          </div>
+          <div class="col-12 col-md-4 d-flex flex-column align-items-start " id="card" style="height: 300px;">   
+             <h1 class="h1">Nando’s <br>Delivery</h1>
+            
+
+            <p class="mt-2">We sometimes change our delivery areas based on demand - check if we’re delivering to you.
+            </p>
+            <button type="button" class="btn btn-success btn-sm mt-4">Order Delivery</button>
+            <img src="./images/deliveroo-logo-black.svg" height="100px" width="50px">
+          </div>
+          <div class="col-12 col-md-4 d-flex flex-column align-items-start " id="card" style="height: 300px;">       
+           <h1 class="h1" style="margin-top: 20px;">Eat-in with us!</h1>
+            <p class="mt-2" >Find your local and grab a seat at the table. <br>Or both.</p>
+            <button type="button" class="btn btn-success btn-sm mt-4">Find Restaurant</button>
+            <p>Already in the restaurant? Scan the QR code on your table using your phone to get started!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="five_images  container-flex ">
+        <div class="center" style="color:black; text-align: center;">
+            <img src="./images/line-black (2).png">
+            <h3>Nando's Rewards</h3>
+            <img src="./images/line-black (2).png">
+            <h5 class="mt-4">Eat PERi-PERi, earn PERi-PERi!</h5>
+        </div>
+        <div class="rew">
+            <div class="row flex-wrap" style="display: flex; width: 100%; margin: 0; padding: 0; justify-content: center;">
+                <div class="col-12 col-lg-2 px-4 mt-2" style=" text-align: center;">
+                    <img src="./images/join.svg " width="100" height="100">
+                    <h4>Join</h4>
+                    <p>Create an account or log in if you already have one</p>
+                </div>
+                <div class="col-12 col-lg-2 px-4 mt-5" style=" text-align: center; margin-left: -30px;">
+                    <img src="./images/wallet.svg" width="100" height="100">
+                    <h4>Add to Wallet</h4>
+                    <p>Add your Nando's Card to Apple Wallet</p>
+                </div>
+                <div class=" col-12 col-lg-2 px-4 mt-4" style=" text-align: center; margin-left: -30px;">
+                    <img src="./images/tap.svg" width="100" height="100">
+                    <h4>Tap</h4>
+                    <p>Tap your phone on the contactless reader</p>
+                </div>
+                <div class="col-12 col-lg-2 px-4 mt-3" style=" text-align: center;">
+                    <img src="./images/earn.svg" width="100" height="100">
+                    <h4>Earn</h4>
+                    <p>Earn a Chilli on every order of £7 or more</p>
+                </div>
+                <div class="col-12 col-lg-2 px-4 mt-2" style=" text-align: center;">
+                    <img src="./images/redeem.svg" width="100" height="100">
+                    <h4>Redeem</h4>
+                    <p>Chillies lead to rewards and rewards mean free PERi-PERi!</p>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+            <button class="btn mt-4" style="margin-bottom: 10px;">Join Now</button>
+            <button class="btn mt-4" style="margin-left: 10px; margin-bottom: 10px;">Log In</button>
+        </div>
+    </div>
+
+     
+      <div class="container-fluid p-0 image_bg">
+        <img src="./images/icecream.jpg" class="bg_main_img img-fluid" alt="Ice Cream">  
+        
+        <div class="content_img">
+            <img src="./images/line.png" class="img-fluid w-25 mt-3" alt="Line">
+            
+            <h1>Bottomless Soft Swirl</h1>
+            <img src="./images/line.png" class="img-fluid w-25 mb-3" alt="Line">
+            <p>Cone or tub? Choose your fighter</p>
+            <button type="button" class="btn btn-light p-0">Order Now</button>
+          
+        </div>
+    </div>
+    
+
+    <div class="container-flex two_img ">
+        <div class="row no-gutters">
+          <div class="col-12 col-md-6 p-0">
+            <div class="image-container position-relative ">
+              <img src="./images/GCdesktop.webp" alt="Bottomless Soft Swirl" class="img-fluid">
+              <div class="text-overlay position-absolute top-50 start-50 translate-middle text-white text-center">
+               
+                <h1>Know a Nando’s lover?</h1>
+               
+                <p>Two words: gift card.</p>
+                <a href="#" class="btn btn-success">BUY NOW</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-12 col-md-6 p-0">
+            <div class="image-container position-relative">
+              <img src="./images/2105-Sus-768x550.webp" alt="Delicious Toppings" class="img-fluid img2">
+              <div class="text-overlay position-absolute top-50 start-50 translate-middle text-white text-center">
+               
+                <h1>Cookin’ up change</h1>
+             
+                <p>We’re changing how we do things bite by bite.</p>
+                <a href="#" class="btn btn-success">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="container-flex w-100 p-0" style="background-color: black;">
+      <div class=" list_cls container d-lg-block d-none text-white">
+        <div class="row">
+        <div class="col-md-2">
+        <h5 class="text-white">FOOD</h5>
+        <ul class="list-unstyled">
+        <li><a href="#" class="text-white">Menu</a></li>
+        <li><a href="#" class="text-white">Recipes</a></li>
+        <li><a href="#" class="text-white">Shop</a></li>
+        <li><a href="#" class="text-white">Our Food</a></li>
+        </ul>
+        </div>
+        <div class="col-md-2">
+        <h5>RESTAURANTS</h5>
+        <ul class="list-unstyled">
+        <li><a href="#" class="text-white">Find a Nando's</a></li>
+        <li><a href="#" class="text-white">View All Restaurants</a></li>
+        </ul>
+        </div>
+        <div class="col-md-2">
+        <h5>NANDO'S CARD</h5>
+        <ul class="list-unstyled">
+        <li><a href="#" class="text-white">Join now</a></li>
+        <li><a href="#" class="text-white">How it works</a></li>
+        <li><a href="#" class="text-white">Lost Card</a></li>
+        <li><a href="#" class="text-white">Log In</a></li>
+        </ul>
+        </div>
+        <div class="col-md-2">
+        <h5>EXPLORE</h5>
+        <ul class="list-unstyled">
+        <li><a href="#" class="text-white">Our Blog</a></li>
+        <li><a href="#" class="text-white">The Nando's App</a></li>
+        <li><a href="#" class="text-white">Being Sustainable</a></li>
+        <li><a href="#" class="text-white">Fighting Malaria</a></li>
+        <li><a href="#" class="text-white">Art</a></li>
+        <li><a href="#" class="text-white">Music</a></li>
+        </ul>
+        </div>
+        <div class="col-md-2">
+        <h5>HELP</h5>
+        <ul class="list-unstyled">
+        <li><a href="#" class="text-white">Search FAQs</a></li>
+        <li><a href="#" class="text-white">My Account</a></li>
+        <li><a href="#" class="text-white">Food</a></li>
+        <li><a href="#" class="text-white">Online Ordering</a></li>
+        <li><a href="#" class="text-white">Restaurants</a></li>
+        </ul>
+        </div>
+        <div class="col-md-2">
+        <h5>LEGAL</h5>
+        <ul class="list-unstyled">
+        <li><a href="#" class="text-white">Terms & Conditions</a></li>
+        <li><a href="#" class="text-white">Privacy Policy</a></li>
+        <li><a href="#" class="text-white">Cookies Policy</a></li>
+        <li><a href="#" class="text-white">Slavery Statement</a></li>
+        <li><a href="#" class="text-white">Gender Pay Gap Report</a></li>
+        <li><a href="#" class="text-white">Insurance Policy Details</a></li>
+        </ul>
+        </div>
+        </div>
+        </div> 
+
+
+        <div class="accordion d-lg-none p-4" id="accordionExample">
+          <div class="accordion-item text-white border-0" style="background-color: black;">
+            <h4 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed  text-white border-0 w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="background-color: black;">
+                <div class="d-flex justify-content-between w-100">
+                  <span>FOOD</span>
+                  <span class="sign"></span>
+                </div>
+              </button>
+            </h4>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Menu</a></li>
+                  <li><a href="#" class="text-white">Recipes</a></li>
+                  <li><a href="#" class="text-white">Shop</a></li>
+                  <li><a href="#" class="text-white">Our Food</a></li>
+                </ul>              
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item text-white border-0" style="background-color: black;">
+            <h4 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed  text-white border-0  w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color: black;">
+                <div class="d-flex justify-content-between w-100">
+                  <span>RESTAURANTS</span>
+                  <span class="sign"></span>
+                </div>
+              </button>
+            </h4>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Find a Nando's</a></li>
+                  <li><a href="#" class="text-white">View all Restaurants</a></li>
+                  
+                </ul>              
+              </div>
+            </div>
+          </div>
+
+
+            <div class="accordion-item text-white border-0" style="background-color: black;">
+            <h4 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed  text-white border-0  w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-color: black;">
+                <div class="d-flex justify-content-between w-100">
+                  <span>NANDO'S CARD</span>
+                  <span class="sign"></span>
+                </div>
+              </button>
+            </h4>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Join Now</a></li>
+                  <li><a href="#" class="text-white">How it Works</a></li>
+                  <li><a href="#" class="text-white">Lost Card</a></li>
+                  <li><a href="#" class="text-white">Log In</a></li>
+                </ul>              
+              </div>
+            </div>
+          </div>
+
+            <div class="accordion-item text-white border-0" style="background-color: black;">
+            <h4 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed  text-white border-0  w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="background-color: black;">
+                <div class="d-flex justify-content-between w-100">
+                  <span>EXPLORE</span>
+                  <span class="sign"></span>
+                </div>
+              </button>
+            </h4>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Our Blog </a></li>
+                  <li><a href="#" class="text-white">The Nando's App</a></li>
+                  <li><a href="#" class="text-white">Being Sustainable</a></li>
+                  <li><a href="#" class="text-white"> Fighting Malaria</a></li>
+                  <li><a href="#" class="text-white">This is PERi-PERi</a></li>
+                  <li><a href="#" class="text-white"> Art</a></li>
+                  <li><a href="#" class="text-white">  Music</a></li>
+                </ul>              
+              </div>
+            </div>
+          </div>
+         
+          <div class="accordion-item text-white border-0" style="background-color: black; border: none !important;">
+            <h4 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed  text-white border-0  w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="background-color: black; ">
+                <div class="d-flex justify-content-between w-100 " >
+                  <span>HELP</span>
+                  <span class="sign"></span>
+                </div>
+              </button>
+            </h4>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Search FAQs </a></li>
+                  <li><a href="#" class="text-white"> My Account</a></li>
+                  <li><a href="#" class="text-white"> Food</a></li>
+                  <li><a href="#" class="text-white">Online Ordering</a></li>
+                  <li><a href="#" class="text-white">   Nando's Cards & Discounts</a></li>
+                  <li><a href="#" class="text-white">Fundraising Requests</a></li>
+                  <li><a href="#" class="text-white">  Sustainability</a></li>
+                  <li><a href="#" class="text-white"> Contact Us</a></li>
+
+                </ul>              
+              </div>
+            </div>
+          </div>
+
+           <div class="accordion-item text-white border-0" style="background-color: black;">
+            <h4 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed  text-white border-0  w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style="background-color: black;">
+                <div class="d-flex justify-content-between w-100">
+                  <span>LEGAL</span>
+                  <span class="sign"></span>
+                </div>
+              </button>
+            </h4>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Terms & Conditions</a></li>
+                  <li><a href="#" class="text-white">  Privacy Policy</a></li>
+                  <li><a href="#" class="text-white"> Cookies Policy</a></li>
+                  <li><a href="#" class="text-white"> Slavery Statement</a></li>
+                  <li><a href="#" class="text-white">Gender Pay Gap Report</a></li>
+                  <li><a href="#" class="text-white"> Insurance Policy Details</a></li>
+                  <li><a href="#" class="text-white"> NGHL Tax Strategy</a></li>
+                  <li><a href="#" class="text-white"> Stakeholder Engagement</a></li>
+                </ul>              
+              </div>
+            </div>
+          </div>
+       
+        </div>
+        
+      </div>
+
+      
+          
+        <footer class="footer_cls text-white">
+            <div class="container-fluid footer_last">
+                <div class="row">
+                    <!-- First Column: App Section -->
+                    <div class="col-md-6 col-12 mb-4 px-4">
+                        <h4 class="heading_footer">Feed your appe- <br>tite</h2>
+                        <p>Get the Nando's app to order from your table, on-the-go or to your sofa</p>
+                        <a href="#"><img src="./images/apple_badge.png" alt="Apple Store Badge"></a>
+                        <a href="#"><img src="./images/google_badge.png" alt="Google Play Badge"></a>
+                        <p class="px-4 py-4"> &copy; Nando's 2024  |  <a href="#">Privacy Policy</a></p>
+                    </div>
+        
+                    <!-- Second Column: Nando's Fans Section -->
+                    <div class="col-md-6 col-12  px-4">
+                        <h2 class="heading_footer">Only (Nando's) <br> fans</h2>
+                        <p>Sign up for hot content. Like our emails and other juicy stuff.<br> It’s free, too…</p>
+                        <div class="icons ">
+                            <i class="bi bi-facebook fs-1"></i>
+                            <i class="bi bi-twitter fs-1"></i>
+                            <i class="bi bi-instagram fs-1"></i>
+                            <i class="bi bi-snapchat fs-1"></i>
+                            <i class="bi bi-youtube fs-1"></i>
+                            <i class="bi bi-spotify"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+      
+      
+
+      
+      <!-- <script src="script.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
