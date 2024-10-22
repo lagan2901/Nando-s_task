@@ -4,17 +4,6 @@ body{
     background-color: $body-bg-color;
 }
 
-
-.nav{
-  .hamburger ::before {
-    content: "---";
-    color: black;
-  }
-  &[aria-expanded="true"] .hamburger::before {
-    content: "-";
-  }
-}
-
 .image_bg {
   position: relative;
   width: 100%;
@@ -49,7 +38,7 @@ body{
       color: white;
     }
 
-    .btn {
+    .custom-btn {
       font-size: 1.5rem;
       padding: 0.5rem 2rem;
       @media (max-width: 768px) {
